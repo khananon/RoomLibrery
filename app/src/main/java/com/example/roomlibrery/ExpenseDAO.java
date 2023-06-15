@@ -10,28 +10,19 @@ import java.util.List;
 
 @Dao
 
-public class ExpenseDAO {
+public interface ExpenseDAO {
     @Query("select * from expense")
-    List<Expense> getAllExpense() {
-
-
-        return null;
-    }
+    List<Expense> getAllExpense();
 
 
     @Insert
-    void addTx(Expense expense) {
-    }
+    void addTx(Expense expense) ;
 
     @Update
-    void updateTx(Expense expense) {
-
-    }
+    void updateTx(Expense expense) ;
 
     @Delete
-    void deleteTX(Expense expense) {
-
-    }
+    void deleteTX(Expense expense) ;
 
 
 }
